@@ -1,0 +1,60 @@
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container{
+    width:60vw;
+    height:80vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    border-radius: 5px;
+}
+
+#display{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    text-align: right;
+    background-color: black;
+    color:#f0ad4e;
+    font-size: 200%;
+    font-weight: 300;
+}
+
+#seven, #eight, #nine{
+    grid-row:2/3;
+}
+#four, #five, #six{
+    grid-row:3/4;
+}
+#one, #two, #three{
+    grid-row:4/5;
+}
+#zero, #dot, #backspace{
+    grid-row:5/6;
+}
+#addition, #subtract{
+    grid-row:3/4;
+}
+#multiply, #divide{
+    grid-row:4/5;
+}
+#clear, #reset{
+    grid-row:2/3;
+}
+#equal{
+    grid-column:4/6;
+    
+}
+.calculation:active{
+    background-color: red;
+    transition-duration: 200ms;
+}
+.number{
+font-size: large;
+
+}
